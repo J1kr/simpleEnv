@@ -23,5 +23,5 @@ $vim docker-compose.yml
 $sh start.sh   
 
 ### simple app 확인 (Terraform으로 생성된 DNS name)
-    http://{$name}-lb-1234567890.{$resion}.elb.amazonaws.com
+    http://{$name}-lb-1234567890.{$regions}.elb.amazonaws.com
 
