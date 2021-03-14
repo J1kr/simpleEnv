@@ -22,6 +22,6 @@ $vim docker-compose.yml
 ```line 29 MYSQL_HOST: "host" -> 위에서 만든 "aws_db_instance.address" ```   
 $sh start.sh   
 
-### Load Balancer (Terraform으로 생성된 DNS name)
+### simple app 확인 (Terraform으로 생성된 DNS name)
     http://{$name}-lb-1893942558.{$resion}.elb.amazonaws.com
 
