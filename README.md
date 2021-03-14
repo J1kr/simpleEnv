@@ -7,8 +7,7 @@ Terraform module &amp; simple app
 ```
 #install 
 install terraform 
-```
-*[terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli, "terraform install")
+``` [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli, "terraform install")
 ```
 install awscli 
 ```
