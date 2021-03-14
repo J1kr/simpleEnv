@@ -27,6 +27,7 @@ module "bastion" {
   source = "../../modules/bastion"
 
   name   = "env"
+  
   # 다른 module을 통해 생성된 값을 가져온다. module 내 Output 값을 넣어준다. 
   vpc_id = module.vpc.vpc_id
   # 사용될 AMI를 가져온다 data 형식으로 common_env_variables.tf에서 값을 참조한다.
@@ -69,7 +70,7 @@ module "alb" {
   vpc_id = module.vpc.vpc_id
   # ALB에 연결될 EC2의 ID를 가져온다. 
   instance_id = module.ec2.instance_id
-  # ALB가 생성될 Subnet을 가져온다. 외부로 노출되기 때문에 Public 망을 이용한다.  
+  # ALB가 생성될 Subnet을 가져온다. 외부와 통신하기 때문에 Public 망을 이용한다.  
   subnet_id = module.vpc.public_subnets_ids[*]
 
   tags = {
@@ -84,7 +85,7 @@ module "mysql" {
 
   # VPC의 Moudle 에서 생성된 Private DB Subnet name을 가져온다.
   subnet_name = module.vpc.database_subnet_group_name
-  # 일반적인 상황에 이렇게 노출하면 안됀다.
+  # 일반적인 상황에 이렇게 노출하면 안됩니..다.
   rds_name = "myapp"
   rds_username = "root"
   rds_passwd = "dkfwl123"
