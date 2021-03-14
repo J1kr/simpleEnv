@@ -17,8 +17,8 @@ $terraform apply
 ## app
 
 ### Using app
-$cd simpleEnv/app/
-$vim docker-compose.yml / line 29 MYSQL_HOST 
-$sh start.sh
+$cd simpleEnv/app/   
+$vim docker-compose.yml / line 29 MYSQL_HOST    
+$sh start.sh   
 
 
