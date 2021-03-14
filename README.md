@@ -14,12 +14,12 @@ $terraform init
 $terraform plan   
 $terraform apply    
 
-## app
+## App (Terraform으로 생성된 ec2-Private에서)
 
 ### Using app
 $cd simpleEnv/app/   
 $vim docker-compose.yml
-    ```line 29 MYSQL_HOST replace```   
+    ```line 29 MYSQL_HOST: "host" -> 위에서 만든 "aws_db_instance.address" ```   
 $sh start.sh   
 
 
