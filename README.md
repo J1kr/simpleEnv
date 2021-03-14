@@ -19,7 +19,7 @@ $terraform apply
 ### Using app
 $cd simpleEnv/app/   
 $vim docker-compose.yml
-    line 29 MYSQL_HOST replace    
+    ```line 29 MYSQL_HOST replace```
 $sh start.sh   
 
 
