@@ -9,7 +9,7 @@ variable "vpc_id" {
 }
 
 variable "ami" {
-  description = " 생성에 사용할 AMI"
+  description = "생성에 사용할 AMI"
   type        = string
 }
 

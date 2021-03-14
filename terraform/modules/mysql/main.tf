@@ -40,7 +40,7 @@ resource "aws_db_parameter_group" "mysql-parameters" {
 }
 
 resource "aws_db_instance" "mysql" {
-  allocated_storage    = 20    # 20 GB of storage, gives us more IOPS than a lower number
+  allocated_storage    = 10    # 20 GB of storage, gives us more IOPS than a lower number
   engine               = "mysql"
   engine_version       = "5.7.31"
   instance_class       = "db.t2.micro"    # use micro if you want to use the free tier
