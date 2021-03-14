@@ -23,5 +23,5 @@ $vim docker-compose.yml
 $sh start.sh   
 
 ### Load Balancer (Terraform으로 생성된 DNS name)
-     http://alb-lb-1893942558.ap-northeast-2.elb.amazonaws.com
+    http://{$name}-lb-1893942558.{$resion}.elb.amazonaws.com
 
