@@ -13,6 +13,7 @@ install terraform
 install awscli 
 ```
 *[awscli](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-install.html, "awscli install")
+```
 #AWS configure
 aws configure
 #mv
