@@ -28,7 +28,7 @@ app.get('/api/hi', function (req, res) {
 
 
 
-//DB lists 테이블에 있는 모든 데이터를 프론트 서베에 보내주기 
+//DB lists 테이블에 있는 모든 데이터를 프론트 서버에 보내주기 
 app.get('/api/values', function (req, res) {
     //데이테베이스에서 모든 정보 가져오기 
     db.pool.query('SELECT * FROM lists;',
