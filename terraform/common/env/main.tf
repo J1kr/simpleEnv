@@ -4,7 +4,7 @@ module "vpc" {
   source = "../../modules/vpc"
 
   # VPC이름을 넣어준다. 이 값은 VPC module이 생성하는 모든 리소스 이름의 prefix가 된다.
-  name = "spoon"
+  name = "test"
   # VPC의 CIDR block을 정의한다.
   cidr = "20.0.0.0/16"
 
